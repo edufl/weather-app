@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* FUNDO CÉU */
+.app-bg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    180deg,
+    #4facfe 0%,
+    #00f2fe 40%,
+    #ffffff 100%
+  );
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* SOL */
+.app-bg::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 80px;
+
+  width: 120px;
+  height: 120px;
+  background: yellow;
+  border-radius: 50%;
+
+  box-shadow: 0 0 60px yellow, 0 0 120px rgba(255, 255, 0, 0.6);
+}
+
+/* NUVENS */
+.app-bg::after {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: -200px;
+
+  width: 200px;
+  height: 60px;
+
+  background: white;
+  border-radius: 50px;
+
+  box-shadow:
+    150px 30px 0 10px white,
+    300px -10px 0 5px white,
+    500px 20px 0 15px white;
+
+  opacity: 0.9;
+}
+
+/* CONTAINER */
+.container {
+  text-align: center;
+  padding: 25px;
+
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  backdrop-filter: blur(8px);
+}
+
+/* INPUT */
+.search {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* BOTÃO */
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:disabled {
+  background: #999;
+}
+
+/* CARD CLIMA */
+.card {
+  margin-top: 20px;
+  padding: 20px;
+
+  background: white;
+  border-radius: 15px;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* FORECAST */
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.forecast-card {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* ERRO */
+.error {
+  color: red;
+}
