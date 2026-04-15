@@ -23,6 +23,7 @@ https://github.com/user-attachments/assets/5cea8237-2d8d-492f-9809-73073ffc0d28
 
 ## 📂 Estrutura do projeto
 
+```bash
 src/
 ├── components/
 │   ├── Forecast.js
@@ -32,6 +33,7 @@ src/
 ├── App.test.js
 ├── index.css
 └── index.js
+```
 
 ---
  
