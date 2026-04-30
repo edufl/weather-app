@@ -18,8 +18,7 @@ Um aplicativo de clima desenvolvido com React, que exibe o clima atual e a previ
 ## 🎥 Demonstração
 
 
-https://github.com/user-attachments/assets/60fb30d0-e627-49bd-877e-49730d9b4b4e
-
+https://github.com/user-attachments/assets/6587cd5f-95af-49f0-857d-563c406159ec
 
 ---
 
